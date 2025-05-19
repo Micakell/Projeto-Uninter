@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pórtfolio</title>
+  <!-- Estilos gerais da página -->
+  <style>
+    /* Estilo do corpo da página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Container central com margens e fundo branco */
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: #fff;
+    }
+
+    /* Cabeçalho do site */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    /* Barra de navegação */
+    nav {
+      background-color: #444;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    /* Links de navegação */
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Espaçamento interno das secções */
+    section {
+      padding: 2rem 0;
+    }
+
+    /* Títulos das secções */
+    h2 {
+      color: #333;
+    }
+
+    /* Estilos dos campos do formulário */
+    .formulario input,
+    .formulario textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Botão de envio do formulário */
+    .formulario input[type="submit"] {
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Alinhamento do conteúdo da secção "Sobre" */
+    #sobre {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Bem-vindo ao meu Portfólio</h1>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+      <a href="#sobre">Sobre Mim</a>
+      <a href="#formacao">Formação</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Secção Sobre Mim -->
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Sou um estudante apaixonado por tecnologia. Nos tempos livres, gosto de ler, jogar videojogos e explorar novas tecnologias.</p>
+    </section>
+
+    <!-- Secção Formação -->
+    <section id="formacao">
+      <h2>Formação</h2>
+      <ul>
+        <li>Licenciatura</li>
+        <ul>
+          <li>Engenharia de software - Uninter (em formação)</li>
+          <li>Técnico em edificações - Senai (Concluído)</li>
+        </ul><br>
+        <li>Cursos Complementares</li>
+        <ul>
+          <li>Assistenten administrativo - Senai (Concluído)</li>
+        </ul><br>
+        <li>Idiomas</li>
+        <ul>
+          <li>Inglês Intermediário</li>
+        </ul>
+      </ul>
+    </section>
+
+    <!-- Secção Portfólio -->
+    <section id="portfolio">
+      <h2>Portfólio</h2>
+      <ul>
+        <li><a href="https://exemplo1.com" target="_blank">Projeto 1</a></li>
+        <li><a href="https://exemplo2.com" target="_blank">Projeto 2</a></li>
+        <li><a href="https://exemplo3.com" target="_blank">Projeto 3</a></li>
+      </ul>
+    </section>
+
+    <!-- Secção Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <form class="formulario">
+        <input type="text" name="nome" placeholder="Seu nome">
+        <input type="email" name="email" placeholder="Seu email">
+        <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </div>
+</body>
+</html>
